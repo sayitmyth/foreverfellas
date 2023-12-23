@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lofi" class="scroll-smooth scrolly">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main | foreverfellas</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="files\css\skin.css">
+    <link rel="icon" href="files\brand\titlebr.ico" type="image/x-icon">
+
+</head>
+
+<body class="bg-white">
+    <div id="mySidenav"
+        class="w-full h-0 fixed z-99 top-0 left-0 bg-black overflow-hidden transition-all duration-1000 ease-in-out rounded-b-full">
+        <div class="closebtn-container flex justify-end pr-8 pt-8">
+            <a href="javascript:void(0)"
+                class="closebtn text-white text-3xl p-4 mt-4 ml-4 border-2 rounded-full border-gray-800 hover:border-red-300 hover:text-red-300 hover:duration-500 font-bold"
+                onclick="closeNav()">&times;</a>
+        </div>
+        <div class="form-control">
+
+            <form class="flex items-center w-1/2 mx-auto mb-20 hidden lg:flex">
+                <label for="simple-search" class="sr-only">Search</label>
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="white">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="simple-search"
+                        class="bg-black border border-gray-500 text-red-500 text-sm focus:text-white w-full ps-10 p-2.5"
+                        placeholder="what do you want to find today ??" required>
+                </div>
+            </form>
+        </div>
+        <div class="footer px-10 text-white">
+            <aside>
+                <img src="files\brand\foreverfellas.png" class="w-20" id="gostery">
+                <p><a class="lg:p-2 lg:text-5xl text-3xl brand">Foreverfellas.</a><br /><a
+                        class="lg:p-2 subbrand">Anonymity & Profanity MM'24</a></p>
+            </aside>
+            <div class="scrollable-div footer subbrand">
+                <div>
+                    <header class="font-bold text-gray-500 text-lg">Inside</header>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">Creator</a>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">design</a>
+                </div>
+                <div class="mt-10 lg:mt-1">
+                    <header class="font-bold text-gray-500 text-lg">Company</header>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">about us</a>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">Projects</a>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">Innovations</a>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">contact</a>
+                    <a class="lg:text-5xl text-4xl hover:text-red-300 duration-500 hover:p-2">Subsidiaries</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar">
+        <div class="flex-1">
+            <a class="p-6 font-semibold lg:text-4xl text-2xl subbrand" style="cursor: pointer;">forever<span
+                    class="text-red-500">fellas</span></a>
+        </div>
+        <div class="flex-none nav-end">
+            <button class="p-6 font-semibold lg:text-4xl text-2xl subbrand">
+                <span class="hidden lg:flex hover:text-red-500 hover:duration-500 duration-500" id="openButton"
+                    onclick="openNav()">menu</span>
+                <div id="openButtono"
+                    class="bg-red-500 border-4 border-black rounded-full p-3 w-3 lg:hidden active:bg-black"
+                    onclick="openNav()"></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- the begining -->
+
+    <div style="background-color: black; background-size: cover;">
+        <div class="hero-overlay bg-opacity-0"></div>
+        <div class="hero h-screen z-[9] sm:ml-1 ml-5">
+            <div class="max-w-7xl">
+                <p class="py-6 text-gray-500">KEEPING IT SIMPLE</p>
+                <h1 class="text-4xl font-bold subbrand text-white" style="cursor: pointer;">You are on the
+                    foreverfellas<br>
+                    <span class="text-red-500 text-5xl lg:text-9xl"> Ryōiki Tenkai</span>
+                </h1>
+                <div class="flex justify-center">
+                    <button
+                        style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f6e70cc2-3c22-464b-96e7-6ab13b815107/dghdhf7-142a64da-fbcd-45cf-8198-54f753cf1335.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y2ZTcwY2MyLTNjMjItNDY0Yi05NmU3LTZhYjEzYjgxNTEwN1wvZGdoZGhmNy0xNDJhNjRkYS1mYmNkLTQ1Y2YtODE5OC01NGY3NTNjZjEzMzUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.60GdLgtJDuIMEba5b02y7y_Ch7BcNfjYvORT3ZOlUBk); background-size: cover; background-attachment: fixed;"
+                        class="btn btn-primary mt-10 hover:bg-white w-96 mx-auto border-2 font-bold subbrand text-lg"
+                        id="beginnow">Let's
+                        Begin</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="h-screen z-[9]" id="thebegining"
+        style="background: url(https://i.pinimg.com/originals/70/67/c2/7067c29f2c2336c23c827cfda44e7c61.gif); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+        <div>
+            <div class="max-w-7xl p-10">
+                <h1 class="text-6xl lg:text-9xl font-extrabold subbrand text-white" style="cursor: pointer;">
+                    About</h1>
+            </div>
+            <div class="relative flex">
+                <p class="lg:text-3xl text-xl lg:ml-10 max-w-4xl p-8 font-medium text-white">
+                    this is foreverfellas, a technology corp that handles Innovations and design and blend them to
+                    create a better technology for the welfare of creatures.
+                </p>
+                <img src="files\brand\whiterm.png"
+                    class="lg:w-80 w-64 rounded-lg absolute lg:right-20 right-10 lg:top-0 top-60 brandrotate" />
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="files\js\act.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

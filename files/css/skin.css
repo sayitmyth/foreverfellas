@@ -1,0 +1,98 @@
+/* 
+designed and developed by sumit hibare - UI/UX Developer & programmer ...
+*/
+
+/* the google cdn fonts my personal favs collection */
+
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+/* font-family: 'Sevillana', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+/* font-family: 'EB Garamond', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+/* font-family: 'Silkscreen', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+/* the end of google fonts collection */
+
+.brand {
+    font-family: 'Sevillana', cursive;
+}
+
+.scrolly::-webkit-scrollbar {
+    display: none;
+}
+
+.subbrand {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* the naviscrooll */
+
+.scrollable-div {
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: transparent transparent;
+    /* Firefox */
+    cursor: pointer;
+}
+
+.scrollable-div::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.scrollable-div:hover::-webkit-scrollbar-thumb {
+    background-color: #333333;
+}
+
+/* brand image ghost blink */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#gostery {
+    animation: blink 5s infinite;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+  .brandrotate {
+    animation: bounce 5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-60px);
+    }
+    60% {
+      transform: translateY(-20px);
+    }
+  }
